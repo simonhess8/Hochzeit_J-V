@@ -1,0 +1,48 @@
+{% extends 'homepage/base.html' %} {% block content %} {% load static %}
+
+<div class="container text-center">
+  <h1>Infos</h1>
+  <p>Falls ihr Fragen, Programmbeiträge, Probleme oder einfach das Bedürfnis habt uns etwas mitzuteilen, dann schreibt uns bitte über folgende E-Mail Adresse:</p>
+
+  <a href="mailto:TothalVerliebt@yahoo.com">TothalVerliebt@yahoo.com</a>
+  <br>
+  <a href="mailto:TothalVerliebt@yahoo.com"><img
+    src="{%static 'homepage/email.png'%}"
+    class="img-fluid"
+    width="200"
+  /></a>
+  <br>  <br>
+  <h1>Anfahrt</h1>
+  <p>Hofschuir - Weimer GbR; Wurmfeld 9, 71149 Bondorf</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2642.9518569351935!2d8.848374315789563!3d48.51498757925533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479757a3d8a98d61%3A0x4cbcea6ba578e8e5!2sHofschuir%20-%20Weimer%20GbR!5e0!3m2!1sde!2sde!4v1681200363197!5m2!1sde!2sde"
+    width="600"
+    height="500"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+  <br>  <br>
+  <h1>Beherbergungen:</h1>
+
+  <p>
+    Falls ihr eine längere Anreise habt, könnt ihr hier oder in anderen
+    Hotels/Pensionen/AirBnB's übernachten.</p>
+
+    <a href="https://www.schuetzenhaus-bondorf.de/fremdenzimmer/"
+      ><img
+      src="{%static 'homepage/Location1.jpg'%}"
+      class="img-fluid"
+      width="300"
+    /></a>
+
+    <a href="https://www.airbnb.de/s/M%C3%B6tzingen--Germany/homes?flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2023-06-01&monthly_length=3&refinement_paths%5B%5D=%2Fhomes&tab_id=home_tab&date_picker_type=calendar&checkin=2023-09-23&checkout=2023-09-24&adults=2&source=structured_search_input_header&search_type=autocomplete_click&price_filter_input_type=0&price_filter_num_nights=1&channel=EXPLORE&zoom_level=10&query=M%C3%B6tzingen%2C%20Deutschland&place_id=ChIJiYTPzqRQl0cRACgJjTz9HwQ"><img
+      src="{%static 'homepage/Location2.jpg'%}"
+      class="img-fluid"
+      width="300"
+    /></a>
+  </p>
+</div>
+
+{%endblock%}

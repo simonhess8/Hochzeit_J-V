@@ -1,0 +1,52 @@
+{% extends 'homepage/base.html' %} {% block content %}
+
+<div class="container text-center">
+  <h1>Rueckmeldung</h1>
+
+  <h2>Bisch dabei?</h2>
+
+  <form action="{% url 'rückmeldung' %}">
+    <select name="status" id="status" value="{{user.profile.status}}">
+      <option value="Ja">Ja klar</option>
+      <option value="Nein">Nein, leider nicht</option>
+    </select>
+    <br />
+    <br />
+    <div class="form-group">
+      <label for="anzahlAlt">Anzahl Personen</label>
+      <input
+        type="number"
+        min="0"
+        max="30"
+        name="anzahlAlt"
+        value="{{user.profile.anzahlPersonenAlt}}"
+        class="form-control"
+        id="anzahlAlt"
+      />
+    </div>
+    <div class="form-group">
+      <label for="anzahlJung">Anzahl Kleinkinder</label>
+      <input
+        type="number"
+        min="0"
+        max="30"
+        name="anzahlJung"
+        value="{{user.profile.anzahlPersonenJung}}"
+        class="form-control"
+        id="anzahlJung"
+      />
+    </div>
+    <br />
+    <input type="submit" value="Antworten" class="btn btn-outline-primary" />
+  </form>
+
+  <ul>
+    <li>Benutzername: {{user.username}}</li>
+    <li>E-Mail: {{user.email}}</li>
+    <li>Anzahl Personen: {{user.profile.anzahlPersonenAlt}}</li>
+    <li>Anzahl Kleinkinder: {{user.profile.anzahlPersonenJung}}</li>
+    <li>Status: {{user.profile.status}}</li>
+  </ul>
+</div>
+
+{% endblock %}

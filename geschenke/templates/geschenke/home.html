@@ -1,0 +1,11 @@
+{% extends 'homepage/base.html' %} {% block content %}
+
+<div class="container text-center">
+  <h1>Geschenkideen</h1>
+  {% for geschenk in geschenkeListe %}
+  <h2>{{geschenk.title}}</h2>
+  <a href="{{geschenk.url}}"
+    ><img src="{{geschenk.image.url}}" class="img-fluid" height="300"
+  /></a>
+  {% endfor %} {% endblock %}
+</div>
