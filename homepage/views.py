@@ -11,6 +11,12 @@ def home(request):
 def galerie(request):
     return render(request, 'homepage/galerie.html')
 
+def datenschutz(request):
+    return render(request, 'homepage/datenschutz.html')
+
+def impressum(request):
+    return render(request, 'homepage/impresum.html')
+
 def rückmeldung(request):
     user = request.user
     if request.user.is_authenticated and request.method == 'GET':

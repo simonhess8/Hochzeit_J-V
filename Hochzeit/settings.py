@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u)mh*9_n#8j+y^z3rjt41&o#y4=9ov=amwv0&@j(judxbi-5&l'
+SECRET_KEY = 'i*lya=7v$l)4unxxy2(j6+^np2=s)clfd*dr_3z-e3bt8x-_y$*9_n#8j+y^z3rjt41&o#y4=9ov=amwv0&@j(judxbi-5&l#3fKjdsn9()?+*+~dfbg>'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["tothalverliebt.info"]
 
 
 # Application definition

@@ -27,6 +27,8 @@ urlpatterns = [
     path('rückmeldung/', views_h.rückmeldung, name='rückmeldung'),
     path('infos/', views_h.infos, name='infos'),
     path('galerie/', views_h.galerie, name= 'galerie'),
+    path('impressum/', views_h.impressum, name= 'impressum'),
+    path('datenschutz/', views_h.datenschutz, name= 'datenschutz'),
 
         #Authentification
     path("signup/", views_h.signupuser, name="signupuser"),
