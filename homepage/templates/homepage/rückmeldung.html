@@ -3,7 +3,7 @@
 <div class="container text-center">
   <h1>Rueckmeldung</h1>
 
-  <h2>Bisch dabei?</h2>
+  <h3>Bisch dabei?</h2>
 
   <form action="{% url 'rückmeldung' %}">
     <select name="status" id="status" value="{{user.profile.status}}">
@@ -40,13 +40,13 @@
     <input type="submit" value="Antworten" class="btn btn-outline-primary" />
   </form>
 
-  <ul>
-    <li>Benutzername: {{user.username}}</li>
-    <li>E-Mail: {{user.email}}</li>
-    <li>Anzahl Personen: {{user.profile.anzahlPersonenAlt}}</li>
-    <li>Anzahl Kleinkinder: {{user.profile.anzahlPersonenJung}}</li>
-    <li>Status: {{user.profile.status}}</li>
-  </ul>
+  <h3> Aktueller Status:</h3>
+   
+    <p>Benutzername: {{user.username}}</p>
+    <p>Status: {{user.profile.status}}</p>
+    <p>Anzahl Personen: {{user.profile.anzahlPersonenAlt}}</p>
+    <p>Anzahl Kleinkinder: {{user.profile.anzahlPersonenJung}}</p>
+  
 </div>
 
 {% endblock %}
