@@ -26,7 +26,7 @@ SECRET_KEY = 'i*lya=7v$l)4unxxy2(j6+^np2=s)clfd*dr_3z-e3bt8x-_y$*9_n#8j+y^z3rjt4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["tothalverliebt.info"]
+ALLOWED_HOSTS = ['www.tothalverliebt.info']
 
 
 # Application definition
