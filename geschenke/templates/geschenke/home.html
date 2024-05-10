@@ -1,17 +1,23 @@
 {% extends 'homepage/base.html' %} {% block content %}
 
 <div class="container text-center">
-  <h1>Geschenkideen</h1>
+  <h4>Geschenkideen</h4>
 
   <p>Hier findet ihr ein paar Geschenke-Inspiration.</p>
-  <p>Falls ihr euch für eine Sache entschieden habt, dann schreibt uns bitte eine Mail an:<br /><a href="mailto:TothalVerliebt@yahoo.com">TothalVerliebt@yahoo.com</a>,<br />damit Dopplungen vermieden werden und am Ende keine 10 Mixer auf dem Geschenketisch liegen</p>
+  <p>
+    Falls ihr euch für eine Sache entschieden habt, dann schreibt uns bitte eine
+    Mail an:<br /><a href="mailto:josias.bolay@t-online.de"
+      >josias.bolay@t-online.de</a
+    >,<br />damit Dopplungen vermieden werden und am Ende keine 10 Mixer auf dem
+    Geschenketisch liegen
+  </p>
   <br />
   {% for geschenk in geschenkeListe %}
   <div
     style="border: 1px solid black; padding-bottom: 20px; padding-top: 20px"
     ,
   >
-    <h3>{{geschenk.title}}</h2>
+    <h5>{{geschenk.title}}</h5>
     <a href="{{geschenk.url}}"
       ><img src="{{geschenk.image.url}}" class="img-fluid" width="300"
     /></a>

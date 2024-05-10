@@ -1,9 +1,9 @@
 {% extends 'homepage/base.html' %} {% block content %}
 
 <div class="container text-center">
-  <h1>Rückmeldung</h1>
+  <h4>Rückmeldung</h4>
 
-  <h3>Bisch dabei?</h2>
+  <h5>Bisch dabei?</h2>
 
   <form action="{% url 'rückmeldung' %}">
     <select name="status" id="status" value="{{user.profile.status}}">
@@ -39,8 +39,8 @@
     <br />
     <input type="submit" value="Antworten" class="btn btn-outline-primary" />
   </form>
-
-  <h3> Aktueller Status:</h3>
+    <br />
+  <h5> Aktueller Status:</h3>
    
     <p>Benutzername: {{user.username}}</p>
     <p>Status: {{user.profile.status}}</p>
