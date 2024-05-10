@@ -1,13 +1,13 @@
 {% extends 'homepage/base.html' %} {% block content %}
 
 <div class="container text-center">
-  <h1>Rueckmeldung</h1>
+  <h1>Rückmeldung</h1>
 
   <h3>Bisch dabei?</h2>
 
   <form action="{% url 'rückmeldung' %}">
     <select name="status" id="status" value="{{user.profile.status}}">
-      <option value="Ja">Ja klar</option>
+      <option value="Ja">Ja klar!</option>
       <option value="Nein">Nein, leider nicht</option>
     </select>
     <br />

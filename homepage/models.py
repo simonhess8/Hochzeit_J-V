@@ -5,7 +5,7 @@ from django.dispatch import receiver
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    status = models.CharField(max_length=10, default="Nein")
+    status = models.CharField(max_length=10, default="-")
     anzahlPersonenAlt = models.CharField(max_length=2, default='0')
     anzahlPersonenJung = models.CharField(max_length=2, default= '0')
 
